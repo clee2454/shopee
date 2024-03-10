@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    height: 130vh;
+}
+.header-top{
+    background-color: orangered;
+    position: absolute;
+}
+.header-top nav.top{
+    /* background-image: linear-gradient(to bottom, rgb(222, 66, 0),rgba(255, 132, 0, 0.9)); */
+    height: 4vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+nav.top div.left a{
+    display: inline-flex;
+    align-items: center;
+    font-size: 10pt;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+}
+nav.top div.left nav.icons a{
+    font-size: 10pt;
+    padding: 5px;
+    text-align: center;
+    color: orangered;
+    background-color: white;
+    line-height: 7px;
+    border-radius: 50px;
+}
+nav.top div.right a{
+    display: inline-flex;
+    align-items: center;
+    font-size: 10pt;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+}
+nav.top div.right i{
+    background-color: orangered;
+    border: white;
+    border-radius: 50px;
+}
+nav.top div a:hover{ 
+    font-weight: bold;
+}
+nav.bot{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    padding:0 30px;
+    padding-top: 16px;
+}
+nav.bot a img{
+    display: inline-block;
+    width: 190px;
+    height: 90px;
+}
+nav.bot div.container{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 40px;
+}
+nav.bot div.container form{
+    padding-top: 20px;
+}
+form input[type=text]{
+    border-radius: 5px;
+    border: none;
+    width: 120vh;
+    height: 7vh;
+}
+form button {
+    background-color: rgba(255, 89, 0, 0.877);
+    border-radius: 5px;
+    font-size: 15pt;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 28px; */
+    align-items: center;
+    width: 65px;
+    height: 6vh;
+    left: 109vh;
+    bottom: 6.5vh;
+}
+.bot .cart a{
+    text-decoration: none;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    font-size: 24pt;
+}
+
+.bot .container form .citcat a{
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 7px;
+    font-size: 9.5pt;
+}
+.bot .container form .citcat a:hover{
+    font-weight: bold;
+}
+
+    .item1{grid-area: header;}
+    .item2{grid-area: righttop;}
+    .item3{grid-area: rightbot;}
+
+div.grid-container{
+    /* margin-top: 20vh; */
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45% 45% 80%;
+    display: grid;
+    grid-template-areas: 
+        'header header righttop'
+        'header header rightbot';
+    gap: 7px;
+    /* background-color: bisque; */
+}
+div.grid-container .item1:hover{
+    border-color: grey;
+}
+div.grid-container .item2:hover{
+    border-color: grey;
+}
+div.grid-container .item3:hover{
+    border-color: grey;
+}
+.grid-container div.item2 img , .item3 img{
+    /* margin: 10px; */
+    width: 100%;
+    height: 100%;
+}
+.grid-container div.item1 img{
+    /* margin: 10px; */
+    width: 100%;
+    height: 100%;
+}
+.extra {
+    display: flex;
+    justify-content: space-between;
+}
+.extra a img{
+    /* padding: 0 20px; */
+    /* position: relative */
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+}
+.extra a:hover{
+    scale: 120%;
+    transition-duration: 0.5s;
+}
+.extra a div{
+    max-width: 100px;
+}
+.extra a{
+    text-align: center;
+    text-decoration: none;
+}
+.extra a div p{
+    font-size: 9pt;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    /* background-color: coral; */
+}
+.foot{
+    background-color: whitesmoke;
+    max-width: 200vh;
+    height: 100vh;
+    padding: 15px;
+}
+.foot .divider{
+    background-color: white;
+    margin: 20px;
+}
+
+
+.foot .foot-content .list-categories h2{
+    font-size: 12pt;
+    color: grey;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+.foot .foot-content .list-categories ul li a img{
+    
+    border: solid whitesmoke;
+}
